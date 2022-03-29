@@ -15,7 +15,7 @@ public class Server {
         String responseMsj = null;
         // sigue escuchando indefinidamente hasta que recibe una llamada de 'exit'
         while (true) {
-            // creando socket y esperando la conexiÃ³n del cliente
+            // creando socket y esperando la conexion del cliente
             System.out.println("Esperando Solicitud del cliente...");
             Socket socket = server.accept();
             // leer desde el socket al objeto ObjectInputStream
@@ -48,7 +48,7 @@ public class Server {
             oos.close();
             socket.close();
 
-            // finalizar el servidor si el cliente envÃ­a una solicitud de salida
+            // finalizar el servidor si el cliente envi�a una solicitud de salida
             if (message.equalsIgnoreCase("exit")) {
                 break;
             }

@@ -22,7 +22,7 @@ class Client {
             System.out.println("2 ===> Buscar Una Cuenta Especifica ");
 
             System.out.print("\n\n");
-            System.out.println("Ingresa la opciÃ³n: ");
+            System.out.println("Ingresa la opcion: ");
             choice = strInput.nextLine();
 
             if (choice.equals("1")) {
@@ -31,7 +31,7 @@ class Client {
                 Client.SearchRecordbyID();
             }
 
-            System.out.println("Â¿Quieres continuar? S/N");
+            System.out.println("�Quieres continuar? S/N");
             cont = strInput.nextLine();
 
 // limpio pantalla
@@ -61,14 +61,14 @@ class Client {
 
         System.out.println("\t\t [ Crear Cuenta Bancaria ]\n");
 
-        System.out.print("Ingresa el NÃºmero de Cuenta: ");
+        System.out.print("Ingresa el Numero de Cuenta: ");
         account = strInput.nextLine();
         System.out.print("Ingresa el Valor: ");
         value = strInput.nextLine();
 
         newRow = "1," + account + "," + value;
 
-// establecer conexiÃ³n de socket al servidor
+// establecer conexion de socket al servidor
         socket = new Socket(host.getHostName(), port);
 
 // escribo en el socket usando ObjectOutputStream
@@ -102,10 +102,10 @@ class Client {
 
         System.out.println("\t\t [ Buscar Cuenta ]\n");
 
-        System.out.println("Ingresa el NÃºmero de Cuenta: ");
+        System.out.println("Ingresa el Numero de Cuenta: ");
         ID = strInput.nextLine();
 
-// establecer conexiÃ³n de socket al servidor
+// establecer conexion de socket al servidor
         socket = new Socket(host.getHostName(), port);
 
 // escribo en el socket usando ObjectOutputStream
